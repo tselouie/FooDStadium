@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FooDStadium</string>
+    <string name="contact_us"><a href="">Contact Us</a></string>
+    <string name="trending_foods">TrendingFoods</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="search_battle_label">Search your favourite food to battle!</string>
+    <string name="search">SEARCH</string>
+    <string name="return_to_main_menu">Return to Main Menu</string>
+</resources>

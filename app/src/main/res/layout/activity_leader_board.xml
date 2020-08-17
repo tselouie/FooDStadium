@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".LeaderBoardActivity">
+
+    <TextView
+        android:id="@+id/leaderBoardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:text="LeaderBoard"
+        android:textColor="@color/black"
+        android:background="@drawable/gradient"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="233dp"
+        android:layout_marginTop="163dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:padding="7dp"
+            android:text="1st"
+            android:textColor="@color/gold"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:padding="7dp"
+            android:text="2nd"
+            android:textColor="@color/silver"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:padding="7dp"
+            android:text="3rd"
+            android:textColor="@color/bronze"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:padding="7dp"
+            android:text="4th" />
+
+        <TextView
+            android:id="@+id/fifth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:padding="7dp"
+            android:text="5th" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="286dp"
+        android:layout_height="340dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="136dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/leaderBoardList"
+            android:layout_width="wrap_content"
+            android:layout_height="272dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="27dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/returnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/pill_big"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/return_to_main_menu"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="119dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
+        android:text="FooDStadium ©" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="620dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/contact_us" />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryActivity">
+
+    <TextView
+        android:id="@+id/historyTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/gradient"
+        android:text="History"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/historyList"
+        android:layout_below="@id/historyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="272dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="27dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:background="@drawable/pill_big"
+        android:layout_below="@id/historyList"
+        android:text="Return to Main Menu"
+        android:id="@+id/returnButton"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="119dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
+        android:text="FooDStadium ©" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="620dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/contact_us" />
+</RelativeLayout>

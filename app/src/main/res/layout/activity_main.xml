@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/main_menu"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+
+    <View
+        style="@style/Divider.Horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/teal_border"
+        android:src="@drawable/ic_search_foreground" />
+
+    <TextView
+        android:id="@+id/searchFoodLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="114dp"
+        android:layout_toEndOf="@+id/searchButton"
+        android:text="Search FooD"
+        android:textSize="40sp" />
+
+    <ImageButton
+        android:id="@+id/trendingButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="223dp"
+        android:background="@drawable/teal_border"
+        android:contentDescription="@string/trending_foods"
+        android:src="@drawable/ic_trending_foreground" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchFoodLabel"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="80dp"
+        android:layout_toEndOf="@+id/trendingButton"
+        android:text="Trending"
+        android:textSize="40sp" />
+
+    <ImageButton
+        android:id="@+id/leaderBoardButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="172dp"
+        android:background="@drawable/teal_border"
+        android:src="@drawable/ic_trophy_foreground" />
+
+    <ImageButton
+        android:id="@+id/historyButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="172dp"
+        android:background="@drawable/teal_border"
+        android:src="@drawable/ic_history_foreground" />
+
+    <ImageView
+        android:layout_width="303dp"
+        android:layout_height="166dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="25dp"
+        android:src="@mipmap/logo_foreground" />
+
+    <View
+        style="@style/Divider.Horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="609dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="100dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="18dp"
+        android:text="FooDStadium ©" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/contact_us" />
+
+</RelativeLayout>
